@@ -1,0 +1,247 @@
+/*header*/
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background: #f6f6f6;
+  font-family: 'Lora', serif;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #cfebfc;
+  height: 66px;
+  width: 100%;
+}
+
+header * {
+  color: black;
+}
+header .logo {
+  float: left;
+  height: inherit;
+  margin-left: 2em;
+}
+
+header .logo-text {
+  margin: 13px;
+}
+
+header .logo-text span {
+  color: #00ccff;
+  font-family: 'Candal', serif;
+}
+
+header ul {
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+header ul li {
+  float: left;
+}
+
+header ul li a {
+  display: block;
+  padding: 21px;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+header ul li a:hover {
+  background: #3399ff;
+  transition: 0.5s;
+}
+header .menu-toggle {
+  display: none;
+}
+
+.page-wrapper {
+  padding-top: 80px;
+}
+/*Content*/
+.content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 800px; */
+  padding: 20px;
+}
+/*FOOTER*/
+
+.footer {
+  background: #303036;
+  color: #d3d3d3;
+  height: 400px;
+  position: absolute;
+}
+.footer .footer-content {
+  display: flex;
+}
+.footer .footer-content .footer-section {
+  flex: 1;
+  padding: 25px;
+}
+.footer .footer-content h1,
+.footer .footer-content h2 {
+  color: white;
+}
+
+.footer .footer-content .about h1 span {
+  color: #00ccff;
+  /* font-family: 'Candal', serif; */
+}
+
+.footer .footer-content .about .contact span {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+.footer .footer-content .about .socials a {
+  border: 1px solid gray;
+  width: 45px;
+  height: 41px;
+  padding-top: 5px;
+  margin-right: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  border-radius: 5px;
+  color: gray;
+  transition: all 0.3s;
+}
+
+.footer .footer-content .about .socials a:hover {
+  border: 1px solid white;
+  color: white;
+  transition: all 0.3s;
+}
+
+.footer .footer-content .links ul a {
+  color: gray;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer .footer-content .links ul a:hover {
+  color: white;
+  margin-left: 15px;
+  transition: all 0.3s;
+}
+
+.footer .footer-bottom {
+  background: #343a40;
+  color: white;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+}
+.footer .footer-content .contact-form .contact-input {
+  background: #272727;
+  color: #bebdbd;
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+  padding: 0.9rem 1.4rem;
+  border: none;
+}
+.footer .footer-content .contact-form .contact-input:focus {
+  background: #1a1a1a;
+}
+
+.footer .footer-content .contact-form .contact-btn {
+  float: right;
+}
+.btn-big {
+  padding: 0.7rem 1.3rem;
+  line-height: 1.3rem;
+}
+.text-input {
+  padding: 0.7rem 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  color: #444;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  font-family: 'Lora', serif;
+}
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 934px) {
+  /* .page-wrapper {
+    width: 100%;
+  } */
+  .footer {
+    height: auto;
+  }
+  .footer .footer-content {
+    height: auto;
+    flex-direction: column;
+  }
+  .footer .footer-content .contact-form {
+    padding-bottom: 90px;
+  }
+  .footer .footer-content .contact-form .contact-btn {
+    width: 100%;
+  }
+  .content img {
+    width: 100%;
+    max-width: pixcel;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  header {
+    position: fixed;
+  }
+  header ul {
+    width: 100%;
+    background: #0e94a0;
+    max-width: 0px;
+    overflow: hidden;
+  }
+
+  .showing {
+    max-width: 100em;
+  }
+  header ul li {
+    width: 100%;
+  }
+  header ul li ul {
+    position: static;
+    width: 100px;
+    display: block;
+  }
+  header .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.9em;
+  }
+  header .logo {
+    margin-left: 0.5em;
+  }
+
+  .content img {
+    width: 100%;
+    max-width: pixcel;
+    height: auto;
+  }
+}
